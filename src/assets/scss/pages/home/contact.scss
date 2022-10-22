@@ -1,0 +1,101 @@
+@import '../../variables/variables';
+
+
+.row{
+    .section-title{
+        text-align: center;
+        margin: 30px;
+        span{
+            color: $primary;
+        }
+        h1{
+            font-weight: bold;
+        }
+    }
+}
+.contact-info{
+    // background: #000;
+    display: flex;
+    .contact-about,.contact-form-wrapper{
+        box-shadow: $card-shadow;
+        margin: 20px;
+        padding: 30px;
+        border-radius: 10px;
+    }
+    .contact-about{
+        .image{
+            img{
+                border-radius: 10px;
+            }
+        }
+        .title-area,.description,.social-area{
+            margin-top: 40px;
+            .title{
+                font-size: 30px;
+                font-weight: bold;
+            }
+            span,p{
+                font-size: 19px;
+            }
+        }
+        .social-area{
+            ul{
+                display: flex;
+                margin-left: -40px;
+                li{
+                    list-style: none;
+                    margin-top: 40px;
+                    &:hover{
+                        transform: translateY(-4px);
+                    }
+                    a{
+                        border-radius: 6px;
+                        padding: 1rem;
+                        box-shadow: $btn-shadow;
+                        margin-right: 24px;
+                        &:hover{
+                            background: $primary;
+                            transition: .5s;       
+                            box-shadow: 0px 15px 20px rgba(99, 97, 97, 0.4);
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contact-form-wrapper{
+        background: rgb(242, 241, 241);
+    }
+    .col-lg-6,.col-lg-12{
+        .form-group{
+            label{
+                margin: 10px;
+                font-size: 1.2rem;
+            }
+            input,textarea{
+                background: white;
+                border-radius: 5px;
+                border: 2px solid rgb(234, 234, 234);
+                &:focus{
+                    border-color:$primary ;
+                }
+            }
+        }
+        .rn-btn{
+            padding: 15px;
+            font-size: 14px;
+            margin-top: 1.5rem;
+            border: none;
+            box-shadow: $card-shadow;
+            color: $primary;
+            font-weight: 600;
+            border-radius: 10px;
+            &:hover{
+                color: white;
+                background: $primary;
+                transform: translateY(-5px);
+            }
+        }
+    }
+}

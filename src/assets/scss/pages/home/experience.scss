@@ -1,0 +1,93 @@
+@import '../../variables/variables';
+.experience{
+    padding-top: .5rem;
+.content{
+    position: relative;
+    margin: 150px;
+    font-family: $font-family-sans-serif;
+    .row{
+        .header-experience{
+            text-align: center;
+            .subtitle{
+                color: $primary;
+            }
+            .title{
+                font-size: 60px;
+            }
+        }
+    }
+    .experience-card{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        margin-top: 1rem;
+        .experience-col{
+            display: flex;
+            .experience-left{
+                display: flex;
+                .experience-img{
+                    justify-content: left;
+                    img{
+                        padding: 20px;
+                        border-radius: 30px;
+                        transition: var(--transition);
+                        opacity: 1;
+                        width: 20rem;
+                        height: 15rem;
+                        &:hover{
+                            transform: translateZ(0);
+                            transition: opacity .25s linear;
+                            will-change: opacity;
+                        }
+                    }
+                }
+                .experience-center{
+                    justify-content: center;
+                    padding: 20px;
+
+                    .date{
+                        background:$primary;
+                        color: white;
+                        padding: 5px;
+                        border-radius: 940px;
+                        font-size: 13px;
+                    }
+                    .title{
+                        margin-top: 20px;
+                    }
+                    .position{
+                        font-size: 20px;
+                        margin-top: 10px;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+            .experience-right{
+                // line-height: 30vh;
+                margin-left: 8rem;
+                margin-top: 6rem;
+                .contact-btn{
+                    border: none;
+                    text-align: center;
+                    color: $primary;
+                    background: linear-gradient(to right bottom,#e7e6e6,#f6f6f8);
+                    padding: 1rem;
+                    padding-right: 2rem;
+                    padding-left: 2rem;
+                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                    // padding: .7rem 1rem;
+                    text-transform: uppercase;
+                    // box-shadow: $btn-shadow;
+                    border-radius: 6%;
+                    font-family: $font-family-sans-serif;
+                    &:hover{
+                        background: $primary;
+                        transition: .5s;       
+                        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+                        color: #fff;
+                        transform: translateY(-3px);
+                    }
+                }
+            }
+        }
+    }
+}
+}
